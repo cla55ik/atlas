@@ -302,7 +302,7 @@
 		 	<label for="username">Укажите ФИО</label><br>
 	 		<input type="text" name="username" value=""><br>
 			<label for="phone">Номер телефона</label><br>
-			<input type="text" name="phone" value=""><br>
+			<input type="text" id="phone" name="phone" value=""><br>
 			<label for="email">Электронная почта</label><br>
 			<input type="email" name="email" value=""><br>
 
@@ -431,12 +431,39 @@ function ansValidation(ev) {
 
 
 <!-- inputMask -->
-
 <script>
-	 $(document).ready(function() {
-	 $("#phone").mask("+7 (999) 99-99-999");
- });
-</script>
+window.addEventListener("DOMContentLoaded", function() {
+function setCursorPosition(pos, elem) {
+	 elem.focus();
+	 if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+	 else if (elem.createTextRange) {
+			 var range = elem.createTextRange();
+			 range.collapse(true);
+			 range.moveEnd("character", pos);
+			 range.moveStart("character", pos);
+			 range.select()
+	 }
+}
+
+function mask(event) {
+	 var matrix = "+7 (___) ___ ____",
+			 i = 0,
+			 def = matrix.replace(/\D/g, ""),
+			 val = this.value.replace(/\D/g, "");
+	 if (def.length >= val.length) val = def;
+	 this.value = matrix.replace(/./g, function(a) {
+			 return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? "" : a
+	 });
+	 if (event.type == "blur") {
+			 if (this.value.length == 2) this.value = ""
+	 } else setCursorPosition(this.value.length, this)
+};
+	 var input = document.querySelector("#phone");
+	 input.addEventListener("input", mask, false);
+	 input.addEventListener("focus", mask, false);
+	 input.addEventListener("blur", mask, false);
+});
+ </script>
 
 </body>
 </html>
