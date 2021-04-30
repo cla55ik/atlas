@@ -1,0 +1,246 @@
+* {
+    font-family: "Roboto";
+    margin:0px ;
+    padding: 0px;
+    border-radius:0px;
+
+}
+
+
+p, h1, h2, h3{
+  margin:0px;
+}
+
+
+h1{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+
+
+h2 {
+  margin-bottom: 0px;
+  margin-top:40px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+
+h3 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom:30px;
+}
+
+
+
+
+.p-rl-40{
+  padding:0px 40px;
+}
+
+.pt-40{
+  padding-top: 40px;
+}
+
+.pb-40{
+  padding-bottom: 40px;
+}
+
+
+
+.green {
+  background-color: #6eae6f;
+}
+
+.gray {
+  background-color: #ededed;
+}
+
+
+.white-text, .white-text a{
+  color: #fff;
+}
+
+
+.text-upper{
+  text-transform: uppercase;
+}
+
+
+
+
+.shadow{
+  -webkit-box-shadow: 5px 9px 20px 0px rgba(50, 50, 50, 0.1);
+  -moz-box-shadow:    5px 9px 20px 0px rgba(50, 50, 50, 0.1);
+  box-shadow:         5px 9px 20px 0px rgba(50, 50, 50, 0.1);
+}
+
+
+main{
+  margin-right: 40px;
+}
+
+
+footer {
+
+  padding: 0px 40px;
+}
+
+#header-main .gray{
+  padding: 15px 40px;
+}
+
+#header-main .header-white{
+  padding: 25px 40px;
+}
+
+
+
+.nav-menu {
+  list-style-type: none;
+   margin: 0;
+   padding: 0;
+   font-size: 14px;
+   font-weight: 300;
+}
+
+.nav-menu a{
+  color: #000;
+  text-decoration: none;
+}
+
+.nav-menu li {
+  padding-right: 30px;
+}
+
+.nav-menu li:last-child{
+  padding-right: 0px;
+}
+
+.lk-menu img{
+  margin-right: 17px;
+}
+
+
+
+.sidebar{
+  margin-right: 40px;
+}
+
+.content{
+  margin: 40px;
+}
+
+
+
+
+
+
+
+.filter-section{
+  background:url('/assets/images/back-man.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+}
+
+
+
+
+
+
+.banner{
+  background: url('/assets/images/back-main.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 300px;
+  padding:40px;
+
+}
+
+
+
+.card{
+  padding-right: 30px;
+  padding-top: 40px;
+  border:none;
+}
+
+.card-img {
+  width:140px;
+  height:140px;
+}
+
+.card-img img{
+  max-height: 50px;
+  max-height: 50px;
+}
+
+
+
+.card-text {
+  max-width: calc(100% - 140px);
+  padding: 0px 30px;
+}
+
+
+
+
+
+.instruction{
+  margin-top: 40px;
+}
+
+.big-text {
+  font-size: 120px;
+  font-weight: 900;
+  color: #eee;
+
+}
+
+
+.instruction-title h2{
+  margin-top:0px;
+  margin-bottom: 0px;
+}
+
+
+
+.red-num {
+  background-color: red;
+  border-width: 0px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 900;
+  padding: 5px 7px;
+
+}
+
+
+.num-right{
+    top: 12%;
+    left: 12%;
+}
+
+.num-left{
+    top: 12%;
+    right: 12%;
+}
+
+
+
+.instruction-rigth{
+  padding-left: 40px;
+}
+
+
+.instruction-block{
+  margin-top:40px;
+}
+
+.instruction-item{
+  margin-left: 10px;
+}

@@ -9,7 +9,10 @@
   <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
 	<title>Атлас пациента клиники «МедЭксперт»</title>
 	<meta name="Description" content="Божественное описание страницы" />
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/footer.css">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 
@@ -20,29 +23,223 @@
 </head>
 
 
-<body class="container">
-	<header>
-		<nav>
-			asdasd
-		</nav>
-		<nav>
-			asdasdasd
-		</nav>
-		<div class="header-white row">
-			<div class="col-50">
-				<img src="">
+<body class="layout-page">
+
+	<header id="header-main">
+	<div class="head-first gray d-flex">
+
+			<nav class="col-md-6">
+				<ul class="nav-menu d-flex">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Обращения и анализы</a></li>
+					<li><a href="#">Запись онлайн</a></li>
+				</ul>
+			</nav>
+		<div class="lk-menu col-md-6 d-flex justify-content-end">
+			<ul class="nav-menu d-flex">
+				<li><a href="#"><img src="/assets/svg/lk.svg" alt="">Личные данные</a></li>
+				<li><a href="#"><img src="/assets/svg/out.svg" alt="">Выход</a></li>
+			</ul>
+		</div>
+		</div>
+		<div class="header-white d-flex">
+			<div class="col-md-6 d-flex align-items-center">
+				<a href="/"><img src="/assets/images/logo.png" alt=""></a>
 			</div>
-			<div class="col-50 patient-fio">
+			<div class="col-md-6 patient-fio d-flex justify-content-end align-items-center text-uppercase">
 				<span>тестов иван иванович</span>
 			</div>
 		</div>
 </header>
+<div class="d-flex content pb-40 pt-40">
+
+
+<section class="sidebar col-lg-3" id="sidebar">
+
+	<aside class="filters shadow">
+		<header class="green">
+			Фильтры иследований
+		</header>
+			<div class="filter-section">
+				<div class="filter-body">
+
+
+					<ul>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+					</ul>
+
+
+
+				<div class="color-panel d-flex justify-content-between">
+					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
+				</div>
+			</div>
+			<div class="view-more d-flex green">
+				<div class="col-10 d-flex align-items-center">
+					Показать все исследования
+				</div>
+				<div class="col-2 d-flex justify-content-end align-items-center">
+					<input id="toggle" type="checkbox">
+					<label class="toggle-container" for="toggle">
+						<span class="button button-toggle"></span>
+					</label>
+					<nav class=toggle-nav>
+						<a class="toggle-nav-item" href="#">ПУНКТ 1</a>
+					</nav>
+				</div>
+
+			</div>
+		</div>
+	</aside>
+	<aside class="journal shadow">
+		<header class="green">
+			Журнал исследований
+		</header>
+		<div class="journal-card">
+			<div class="time-date">
+				<span>07.12.2016</span>
+				<span>13:06</span>
+			</div>
+			<div class="journal-name">
+				МРТ Стопа
+			</div>
+
+		</div>
+	</aside>
+
+</section>
+	<div class="col-9" id="main">
+		<main>
+			<div class="banner d-flex align-items-center">
+				<div class="col-6">
+					<h1>Добро пожаловать в&nbsp;атлас пациента</h1>
+					<p>Ознакомьтесь с&nbsp;краткой инструкцией и&nbsp;возможностями сервиса «Атлас&nbsp;Пациента».</p>
+				</div>
+
+			</div>
+			<div class="">
+				<h2>Возможноти атласа пациента</h2>
+
+				<div class="">
+				<div class="col-12 d-flex">
+					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+						<div class="card-img green d-flex justify-content-center align-items-center">
+							<img src="assets/svg/01-atlas.svg" alt="">
+						</div>
+						<div class="card-text">
+							<p>В атласе пациента можно посмотреть все заключения по всем исследованиям</p>
+						</div>
+					</div>
+
+					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+						<div class="card-img gray d-flex justify-content-center align-items-center">
+							<img src="assets/svg/02-printer.svg" alt="">
+						</div>
+						<div class="card-text">
+							<p>Из атласа пациента можно распечатать любое заключение</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 d-flex">
+
+					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+						<div class="card-img gray d-flex justify-content-center align-items-center">
+							<img src="assets/svg/03-dynamic.svg" alt="">
+						</div>
+						<div class="card-text">
+							<p>Наглядное представление динамики измерений по каждому показателю</p>
+						</div>
+					</div>
+
+					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+						<div class="card-img green d-flex justify-content-center align-items-center">
+							<img src="assets/svg/04-mobile.svg" alt="">
+						</div>
+						<div class="card-text">
+							<p>Атлас пациента позволяет посмотреть результаты исследований удаленно</p>
+						</div>
+					</div>
+				</div>
+				</div>
+
+
+<!-- Instruction -->
+				<div class="instruction">
+
+				<div class="instruction-title">
+					<h2>Инструкция</h2>
+
+				</div>
+
+				<div class="instruction-block col-12 d-flex">
+					<div class="instruction d-flex align-items-center">
+						<span class="big-text">01</span>
+						<div class="instruction-body d-flex align-items-center">
+							<div class="instruction-item">
+								<h3>Навигация по исследованиям</h3>
+								<p>Для ознакомления с исследованием выберите один из разделов в меню</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 instruction-img position-relative">
+						<span class="red-num num-right white-text position-absolute">01</span>
+						<img class="img-fluid" src="/assets/images/in-01.jpg" alt="">
+					</div>
+				</div>
+
+				<div class="instruction-block col-12 d-flex">
+					<div class="col-md-6 col-sm-12 instruction-img position-relative">
+						<span class="red-num num-left white-text position-absolute">02</span>
+						<img class="img-fluid" src="/assets/images/in-01.jpg" alt="">
+					</div>
+					<div class="instruction instruction-rigth d-flex align-items-center">
+						<span class="big-text">02</span>
+						<div class="instruction-body d-flex align-items-center">
+							<div class="instruction-item">
+								<h3>Динамика измерений</h3>
+								<p>Для просмотра динамики иследований нажмите на кнопку</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			</div>
+		</main>
+	</div>
+</div>
+</div>
+
+
+<footer class="white-text green d-flex align-items-center">
+	<div class="col-6 d-flex">
+		© 2018 Atlas Patient
+	</div>
+	<div class="col-6 d-flex justify-content-end">
+		<a href="#">Наверх</a>
+	</div>
+</footer>
 
 
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
 
 </body>
 </html>
