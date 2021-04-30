@@ -183,21 +183,21 @@
 	</aside>
 
 </section>
-	<div class="col-9" id="main">
+	<div class="col-lg-9 col-sm-12" id="main">
 		<main>
 			<div class="banner d-flex align-items-center">
-				<div class="col-6">
+				<div class="col-lg-6 col-sm-12">
 					<h1>Добро пожаловать в&nbsp;атлас пациента</h1>
 					<p>Ознакомьтесь с&nbsp;краткой инструкцией и&nbsp;возможностями сервиса «Атлас&nbsp;Пациента».</p>
 				</div>
 
 			</div>
 			<div class="">
-				<h2>Возможноти атласа пациента</h2>
+				<h2>Возможности атласа пациента</h2>
 
 				<div class="">
-				<div class="col-12 d-flex">
-					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+				<div class="col-12 d-flex row">
+					<div class="cards col-md-6 col-sm-12 d-flex flex-row align-items-center">
 						<div class="card-img green d-flex justify-content-center align-items-center">
 							<img src="assets/svg/01-atlas.svg" alt="">
 						</div>
@@ -206,7 +206,7 @@
 						</div>
 					</div>
 
-					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+					<div class="cards col-md-6 col-sm-12 d-flex flex-row align-items-center">
 						<div class="card-img gray d-flex justify-content-center align-items-center">
 							<img src="assets/svg/02-printer.svg" alt="">
 						</div>
@@ -215,9 +215,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 d-flex">
+				<div class="col-12 d-flex row">
 
-					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+					<div class="cards col-md-6 col-sm-12 d-flex flex-row align-items-center">
 						<div class="card-img gray d-flex justify-content-center align-items-center">
 							<img src="assets/svg/03-dynamic.svg" alt="">
 						</div>
@@ -226,7 +226,7 @@
 						</div>
 					</div>
 
-					<div class="card col-md-6 col-sm-12 d-flex flex-row align-items-center">
+					<div class="cards col-md-6 col-sm-12 d-flex flex-row align-items-center">
 						<div class="card-img green d-flex justify-content-center align-items-center">
 							<img src="assets/svg/04-mobile.svg" alt="">
 						</div>
@@ -293,8 +293,9 @@
  <div id="myModal" class="modal">
 
  <div class="modal-content">
+	 <span class="close d-flex justify-content-end">Закрыть ×</span>
  <div class="modal-header">
-	 <span class="close">Закрыть ×</span>
+
 	 <h2>Введите данные для входа</h2>
  </div>
  <div class="modal-body">
@@ -319,7 +320,10 @@
 				<label>
 				<input type="checkbox" name="passwordconfirm" id="passwordconfirm" class="showPassword"> Показать пароль
 				</label>
-				<input type="submit" id="submitform" name="" href="#" value="Отправить" onclick="ansValidation(event)">
+				<div class="modal-footer d-flex p-0 justify-content-start">
+						<input type="submit" id="submitform" name="" href="#" value="Отправить" onclick="ansValidation(event)">
+				</div>
+
 
 			</div>
 
