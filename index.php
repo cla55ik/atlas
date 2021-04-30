@@ -30,14 +30,14 @@
 
 			<nav class="col-md-6">
 				<ul class="nav-menu d-flex">
-					<li><a href="#">Главная</a></li>
+					<li><a href="/">Главная</a></li>
 					<li><a href="#">Обращения и анализы</a></li>
 					<li><a href="#">Запись онлайн</a></li>
 				</ul>
 			</nav>
 		<div class="lk-menu col-md-6 d-flex justify-content-end">
 			<ul class="nav-menu d-flex">
-				<li><a href="#"><img src="/assets/svg/lk.svg" alt="">Личные данные</a></li>
+				<li><a href="#" type="button" name="button" id="myBtn"><img src="/assets/svg/lk.svg" alt="">Личные данные</a></li>
 				<li><a href="#"><img src="/assets/svg/out.svg" alt="">Выход</a></li>
 			</ul>
 		</div>
@@ -51,13 +51,13 @@
 			</div>
 		</div>
 </header>
-<div class="d-flex content pb-40 pt-40">
+<div class="d-flex content">
 
 
 <section class="sidebar col-lg-3" id="sidebar">
 
 	<aside class="filters shadow">
-		<header class="green">
+		<header class="label-sidebar green white-text">
 			Фильтры иследований
 		</header>
 			<div class="filter-section">
@@ -65,57 +65,120 @@
 
 
 					<ul>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
-						<li><button type="button" name="button"><img src="assets/svg/01-atlas.svg" alt="">мрт</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/f-01.svg" alt="">МРТ</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/f-02.svg" alt="">КТ</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/f-03.svg" alt="">Рентген</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/f-04.svg" alt="">УЗИ</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/f-05.svg" alt="">ФД</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/f-06.svg" alt="">Консультация</button></li>
+						<li><button type="button" name="button"><img src="assets/svg/f-07.svg" alt="">Анализы</button></li>
+
 					</ul>
 
 
 
 				<div class="color-panel d-flex justify-content-between">
-					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
-					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
-					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
-					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
-					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
-					<button type="button" name="button"><img src="assets/images/color-01.jpg" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/glass-01.png" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/glass-02.png" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/glass-03.png" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/glass-04.png" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/glass-05.png" alt=""></button>
+					<button type="button" name="button"><img src="assets/images/glass-06.png" alt=""></button>
 				</div>
-			</div>
-			<div class="view-more d-flex green">
-				<div class="col-10 d-flex align-items-center">
-					Показать все исследования
-				</div>
-				<div class="col-2 d-flex justify-content-end align-items-center">
-					<input id="toggle" type="checkbox">
-					<label class="toggle-container" for="toggle">
-						<span class="button button-toggle"></span>
-					</label>
-					<nav class=toggle-nav>
-						<a class="toggle-nav-item" href="#">ПУНКТ 1</a>
-					</nav>
-				</div>
+				<div class="view-more d-flex green white-text">
+					<div class="col-10 d-flex align-items-center">
+						Показать все исследования
+					</div>
+					<div class="col-2 d-flex justify-content-end align-items-center">
 
+
+<!--hamburger -->
+						<a class="hamburger" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter"><img class="img-fluid" src="/assets/svg/hamburger.svg"></a>
+						<div class="collapse" id="collapseFilter">
+  						<div class="card card-body">
+    					Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
+  						</div>
+						</div>
+
+
+
+					</div>
+
+				</div>
 			</div>
+
 		</div>
 	</aside>
 	<aside class="journal shadow">
-		<header class="green">
+		<header class="label-sidebar green white-text">
 			Журнал исследований
 		</header>
 		<div class="journal-card">
-			<div class="time-date">
-				<span>07.12.2016</span>
-				<span>13:06</span>
-			</div>
-			<div class="journal-name">
-				МРТ Стопа
-			</div>
 
+	<table class="table-journal" style="width:100% ">
+    <tbody>
+        <tr>
+            <td>
+							<div class="journal-date">
+								07.12.2016 13:06
+							</div>
+							<div class="journal-name">
+								МРТ Стопа
+							</div>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<div class="journal-date">
+								26.09.2017 17:06
+							</div>
+							<div class="journal-name">
+								Электронейромиография (ЭНМГ)
+							</div>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<div class="journal-date">
+								07.12.2016 13:06
+							</div>
+							<div class="journal-name">
+								МРТ Шейный отдел позвоночни
+							</div>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<div class="journal-date">
+								26.09.2017 17:06 ФД
+							</div>
+							<div class="journal-name">
+								Электронейромиография
+							</div>
+						</td>
+				</tr>
+				<tr>
+            <td>
+							<div class="journal-date">
+								07.12.2016 13:06
+							</div>
+							<div class="journal-name">
+								МРТ Стопа
+							</div>
+						</td>
+				</tr>
+				<tr>
+						<td>
+							<div class="journal-date">
+								26.09.2017 17:06
+							</div>
+							<div class="journal-name">
+								Электронейромиография (ЭНМГ)
+							</div>
+						</td>
+				</tr>
+		</tbody>
+	</table>
 		</div>
 	</aside>
 
@@ -225,12 +288,42 @@
 </div>
 
 
+<!-- Модалка-->
+
+ <div id="myModal" class="modal">
+
+ <div class="modal-content">
+ <div class="modal-header">
+	 <span class="close">Закрыть ×</span>
+	 <h2>Введите данные для входа</h2>
+ </div>
+ <div class="modal-body">
+	 <form class="" action="index.html" method="post">
+		 	<label for="username">Укажите ФИО</label><br>
+	 		<input type="text" name="username" value="">
+			<label for="phone"></label>
+			<input type="text" name="phone" value="">
+			<label for="email"></label>
+			<input type="email" name="email" value="">
+	 </form>
+
+
+ </div>
+
+</div>
+ </div>
+
+
+
+
+
+
 <footer class="white-text green d-flex align-items-center">
 	<div class="col-6 d-flex">
 		© 2018 Atlas Patient
 	</div>
-	<div class="col-6 d-flex justify-content-end">
-		<a href="#">Наверх</a>
+	<div class="scroll-head col-6 d-flex justify-content-end">
+		<a class="d-flex" href="#"><span>Наверх</span><img class="img-fluid arrow" src="assets/svg/up-arrow.svg"></a>
 	</div>
 </footer>
 
@@ -238,8 +331,31 @@
 
 
 
+
+
+
+
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script>
+ var modal = document.getElementById('myModal');
+ var btn = document.getElementById("myBtn");
+ var span = document.getElementsByClassName("close")[0];
 
+ btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+ if (event.target == modal) {
+	 modal.style.display = "none";
+ }
+}
+</script>
 </body>
 </html>

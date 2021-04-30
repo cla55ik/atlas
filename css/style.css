@@ -143,7 +143,7 @@ footer {
   background:url('/assets/images/back-man.jpg');
   background-repeat: no-repeat;
   background-position: center right;
-  background-size: contain;
+
 }
 
 
@@ -243,4 +243,132 @@ footer {
 
 .instruction-item{
   margin-left: 10px;
+}
+
+
+
+.scroll-head img{
+  margin-left: 7px;
+}
+
+.scroll-head a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+
+
+.label-sidebar{
+  font-size: 17px;
+  font-weight: 900;
+  padding: 23px 0px 23px 30px;
+
+}
+
+
+
+.journal{
+  margin-top:40px;
+}
+
+
+.filter-body{
+  padding-bottom: 30px;
+}
+
+.filter-body ul{
+  list-style-type:none;
+  padding-left:20px;
+}
+
+.filter-body li{
+  margin-top: 30px !important;
+}
+
+.filter-body button {
+  border:0px;
+  background: none;
+  font-size:14px;
+  font-weight: 300;
+  padding: 0px;
+}
+
+.filter-body img{
+  margin-right: 15px;
+}
+
+
+.color-panel{
+  margin: 30px 20px;
+}
+
+
+.view-more{
+  margin:0px 20px;
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+
+thead {
+  background-color: #6eae6f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 900;
+
+
+}
+
+
+td {
+    padding: 14px 0px 14px 30px !important;
+}
+
+
+
+.journal-date{
+  color: #8c8c8c;
+}
+
+
+.journal-date, .journal-name{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+tr:nth-child(odd) {
+  background-color: #ededed;
+}
+
+
+header#header-main {
+    box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.2);
+}
+
+.modal {
+ display: none; /* Скрыто по умолчанию */
+ background-color: rgb(0,0,0); /* Затемнение фона */
+ background-color: rgba(0,0,0,0.5); /* Полупрозрачное затемнение */
+ z-index: 1; /* Фон на нижнем слое */
+ overflow: auto; /* При необходимости, то появиться прокрутка */
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+/* отступы */
+ padding: 2% 30% 10% 30%;
+}
+
+
+
+
+
+
+.close {
+ font-size:  14px;
+ font-weight:  bold;
 }
