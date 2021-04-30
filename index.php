@@ -300,11 +300,28 @@
  <div class="modal-body">
 	 <form class="" action="index.html" method="post">
 		 	<label for="username">Укажите ФИО</label><br>
-	 		<input type="text" name="username" value="">
-			<label for="phone"></label>
-			<input type="text" name="phone" value="">
-			<label for="email"></label>
-			<input type="email" name="email" value="">
+	 		<input type="text" name="username" value=""><br>
+			<label for="phone">Номер телефона</label><br>
+			<input type="text" name="phone" value=""><br>
+			<label for="email">Электронная почта</label><br>
+			<input type="email" name="email" value=""><br>
+
+			<div class="inputs">
+				<label for="password">Введите пароль</label><br>
+    		<input type="password" class="password">
+    		<label>
+        <input type="checkbox" class="showPassword"> Показать пароль
+    		</label>
+			</div>
+			<div class="inputs">
+				<label for="password">Подтвердите пароль</label><br>
+				<input type="password" name="password" class="password">
+				<label>
+				<input type="checkbox" name="password-confirm" class="showPassword"> Показать пароль
+				</label>
+			</div>
+
+
 	 </form>
 
 
@@ -357,5 +374,25 @@ window.onclick = function(event) {
  }
 }
 </script>
+
+<!-- Показать пароль-->
+<script type="text/javascript">
+let showPassword = document.querySelectorAll('.showPassword');
+
+showPassword.forEach(item =>
+    item.addEventListener('click', toggleType)
+);
+
+
+ function toggleType() {
+    let input = this.closest('.inputs').querySelector('.password');
+    if (input.type === 'password') {
+        input.type = 'text';
+    } else {
+        input.type = 'password';
+    }
+}
+</script>
+
 </body>
 </html>
