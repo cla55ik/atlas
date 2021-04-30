@@ -298,7 +298,7 @@
 	 <h2>Введите данные для входа</h2>
  </div>
  <div class="modal-body">
-	 <form class="" action="index.html" method="post">
+	 <form class="formdata" action="" method="">
 		 	<label for="username">Укажите ФИО</label><br>
 	 		<input type="text" name="username" value=""><br>
 			<label for="phone">Номер телефона</label><br>
@@ -315,14 +315,19 @@
 			</div>
 			<div class="inputs">
 				<label for="password">Подтвердите пароль</label><br>
-				<input type="password" name="password" class="password">
+				<input type="password" name="password" id ="password" class="password">
 				<label>
-				<input type="checkbox" name="password-confirm" class="showPassword"> Показать пароль
+				<input type="checkbox" name="passwordconfirm" id="passwordconfirm" class="showPassword"> Показать пароль
 				</label>
+				<input type="submit" id="submitform" name="" href="#" value="Отправить" onclick="ansValidation(event)">
+
 			</div>
 
 
 	 </form>
+
+
+
 
 
  </div>
@@ -352,9 +357,13 @@
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+<script src="/assets/js/jquery.maskedinput.min.js"></script>
+
+
+
 <script>
  var modal = document.getElementById('myModal');
  var btn = document.getElementById("myBtn");
@@ -373,10 +382,10 @@ window.onclick = function(event) {
 	 modal.style.display = "none";
  }
 }
-</script>
 
-<!-- Показать пароль-->
-<script type="text/javascript">
+<!-- Show Password -->
+
+
 let showPassword = document.querySelectorAll('.showPassword');
 
 showPassword.forEach(item =>
@@ -392,6 +401,41 @@ showPassword.forEach(item =>
         input.type = 'password';
     }
 }
+</script>
+
+<!-- Validation Pass-->
+
+<script type="text/javascript">
+function ansValidation(ev) {
+  ev.preventDefault
+  // there is no input named name
+  //var nameValue = document.getElementById("name").value
+  var nameValue = "test";
+  var passValue = document.getElementById("password").value
+  var confpassValue = document.getElementById("passwordconfirm").value
+  // the typeof operator returns a string.
+  if(passValue !== confpassValue) {
+     window.alert("Пароли не совпадают. Введите еще раз")
+		 return false;
+  }else {
+		window.alert("Спасибо за ваше обращение!")
+		document.querySelector('#form').submit();
+
+        return true;
+	}
+}
+
+</script>
+
+
+
+
+<!-- inputMask -->
+
+<script>
+	 $(document).ready(function() {
+	 $("#phone").mask("+7 (999) 99-99-999");
+ });
 </script>
 
 </body>
