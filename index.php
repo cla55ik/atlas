@@ -37,8 +37,8 @@
 			</nav>
 		<div class="lk-menu col-md-6 d-flex justify-content-end">
 			<ul class="nav-menu d-flex">
-				<li><a href="#" type="button" name="button" id="myBtn"><img src="/assets/svg/lk.svg" alt="">Личные данные</a></li>
-				<li><a href="#"><img src="/assets/svg/out.svg" alt="">Выход</a></li>
+				<li><a href="#" type="button" id="myBtn"><img src="/assets/svg/lk.svg" alt="">Личные данные</a></li>
+				<li><a href="#"><img src="/assets/svg/out.svg" alt="кнопка входа">Выход</a></li>
 			</ul>
 		</div>
 		</div>
@@ -93,7 +93,7 @@
 
 
 <!--hamburger -->
-						<a class="hamburger" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter"><img class="img-fluid" src="/assets/svg/hamburger.svg"></a>
+						<a class="hamburger" data-bs-toggle="collapse" href="#collapseFilter" role="button" aria-expanded="false" aria-controls="collapseFilter"><img class="img-fluid" src="/assets/svg/hamburger.svg" alt="кнопка меню"></a>
 						<div class="collapse" id="collapseFilter">
   						<div class="card card-body">
     					Некоторый заполнитель для компонента сворачивания. Эта панель по умолчанию скрыта, но открывается, когда пользователь активирует соответствующий триггер.
@@ -285,7 +285,7 @@
 		</main>
 	</div>
 </div>
-</div>
+
 
 
 <!-- Модалка-->
@@ -299,13 +299,13 @@
 	 <h2>Введите данные для входа</h2>
  </div>
  <div class="modal-body">
-	 <form class="formdata" action="" method="">
+	 <form class="formdata">
 		 	<label for="username">Укажите ФИО</label><br>
-	 		<input type="text" name="username" value=""><br>
+	 		<input type="text" name="username" id="username" value=""><br>
 			<label for="phone">Номер телефона</label><br>
 			<input type="text" id="phone" name="phone" value=""><br>
 			<label for="email">Электронная почта</label><br>
-			<input type="email" name="email" value=""><br>
+			<input type="email" name="email" id="email" value=""><br>
 
 			<div class="inputs">
 				<label for="password">Введите пароль</label><br>
@@ -321,7 +321,7 @@
 				<input type="checkbox" name="passwordconfirm" id="passwordconfirm" class="showPassword"> Показать пароль
 				</label>
 				<div class="modal-footer d-flex p-0 justify-content-start">
-						<input type="submit" id="submitform" name="" href="#" value="Отправить" onclick="ansValidation(event)">
+						<input type="submit" id="submitform" value="Отправить" onclick="ansValidation(event)">
 				</div>
 
 
@@ -349,7 +349,7 @@
 		© 2018 Atlas Patient
 	</div>
 	<div class="scroll-head col-6 d-flex justify-content-end">
-		<a class="d-flex" href="#"><span>Наверх</span><img class="img-fluid arrow" src="assets/svg/up-arrow.svg"></a>
+		<a class="d-flex" href="#"><span>Наверх</span><img class="img-fluid arrow" src="assets/svg/up-arrow.svg" alt="кнопка наверх"></a>
 	</div>
 </footer>
 
@@ -409,23 +409,18 @@ showPassword.forEach(item =>
 
 <!-- Validation Pass-->
 
-<script type="text/javascript">
+<script>
 function ansValidation(ev) {
   ev.preventDefault
-  // there is no input named name
-  //var nameValue = document.getElementById("name").value
-  var nameValue = "test";
   var passValue = document.getElementById("password").value
   var confpassValue = document.getElementById("passwordconfirm").value
-  // the typeof operator returns a string.
+
   if(passValue !== confpassValue) {
      window.alert("Пароли не совпадают. Введите еще раз")
-		 return false;
+		 
   }else {
 		window.alert("Спасибо за ваше обращение!")
-		document.querySelector('#form').submit();
 
-        return true;
 	}
 }
 
